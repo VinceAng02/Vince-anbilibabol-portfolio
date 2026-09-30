@@ -25,7 +25,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
     <header className="navbar-header">
       <div className="navbar-container">
         <div className="navbar-logo" onClick={() => handleScrollTo('home')}>
-          Marlon
+          Vince
         </div>
 
         <nav className={`navbar-menu ${isOpen ? 'active' : ''}`}>
