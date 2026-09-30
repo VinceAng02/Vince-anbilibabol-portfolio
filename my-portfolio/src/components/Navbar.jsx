@@ -9,6 +9,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
     { id: "works", label: "Works" },
+    { id: "contact", label: "Contact" },
   ];
 
   const handleScrollTo = (id) => {
