@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import React, { useState } from "react";
+import "./Navbar.css";
 
 export default function Navbar({ activeSection, setActiveSection }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'works', label: 'Works' },
-    { id: 'contact', label: 'Contact' },
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
   ];
 
   const handleScrollTo = (id) => {
@@ -17,22 +14,24 @@ export default function Navbar({ activeSection, setActiveSection }) {
     setIsOpen(false);
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <header className="navbar-header">
       <div className="navbar-container">
-        <div className="navbar-logo" onClick={() => handleScrollTo('home')}>
-          Vince
+        <div className="navbar-logo" onClick={() => handleScrollTo("home")}>
+          Vincent
         </div>
 
-        <nav className={`navbar-menu ${isOpen ? 'active' : ''}`}>
+        <nav className={`navbar-menu ${isOpen ? "active" : ""}`}>
           {navLinks.map((link) => (
             <button
               key={link.id}
-              className={`nav-link ${activeSection === link.id ? 'active' : ''}`}
+              className={`nav-link ${
+                activeSection === link.id ? "active" : ""
+              }`}
               onClick={() => handleScrollTo(link.id)}
             >
               {link.label}
@@ -41,9 +40,9 @@ export default function Navbar({ activeSection, setActiveSection }) {
         </nav>
 
         <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-          <span className={`bar ${isOpen ? 'open' : ''}`}></span>
-          <span className={`bar ${isOpen ? 'open' : ''}`}></span>
-          <span className={`bar ${isOpen ? 'open' : ''}`}></span>
+          <span className={`bar ${isOpen ? "open" : ""}`}></span>
+          <span className={`bar ${isOpen ? "open" : ""}`}></span>
+          <span className={`bar ${isOpen ? "open" : ""}`}></span>
         </div>
       </div>
     </header>
