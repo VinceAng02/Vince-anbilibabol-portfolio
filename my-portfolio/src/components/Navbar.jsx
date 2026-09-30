@@ -25,16 +25,15 @@ export default function Navbar({ activeSection, setActiveSection }) {
     <header className="navbar-header">
       <div className="navbar-container">
         <div className="navbar-logo" onClick={() => handleScrollTo("home")}>
-          Vincent
+          Vince
         </div>
 
         <nav className={`navbar-menu ${isOpen ? "active" : ""}`}>
           {navLinks.map((link) => (
             <button
               key={link.id}
-              className={`nav-link ${
-                activeSection === link.id ? "active" : ""
-              }`}
+              className={`nav-link ${activeSection === link.id ? "active" : ""
+                }`}
               onClick={() => handleScrollTo(link.id)}
             >
               {link.label}

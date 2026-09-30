@@ -14,8 +14,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Opens default email client with pre-filled message
-    const mailtoUrl = `mailto:vincent@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(
+    const mailtoUrl = `mailto:vincentangelo092@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(
       formData.name
     )}&body=${encodeURIComponent(
       formData.message
@@ -30,13 +29,12 @@ export default function Contact() {
         <span className="section-subtitle">Get In Touch</span>
 
         <div className="contact-content">
-          {/* Contact Info Cards */}
           <div className="contact-info">
             <div className="contact-card">
               <div className="contact-icon">✉️</div>
               <h3 className="contact-card-title">Email</h3>
-              <span className="contact-card-data">vincent@gmail.com</span>
-              <a href="mailto:vincent@gmail.com" className="contact-button">
+              <span className="contact-card-data">vincentangelo092@gmail.com</span>
+              <a href="mailto:vincentangelo092@gmail.com" className="contact-button">
                 Write me →
               </a>
             </div>
@@ -56,7 +54,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Contact Form */}
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-div">
               <label className="form-tag">Name</label>

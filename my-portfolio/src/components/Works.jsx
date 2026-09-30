@@ -32,7 +32,7 @@ export default function Works() {
     },
     {
       id: 3,
-      title: "Princess Day Celebration App",
+      title: "Birthday Celebration App",
       category: "web-apps",
       categoryLabel: "Interactive Celebration App",
       tags: ["React", "CSS Animations", "Audio API", "UI/UX"],
@@ -43,7 +43,7 @@ export default function Works() {
       id: 4,
       title: "Game Tracking Clock",
       category: "web-apps",
-      categoryLabel: "Cyberpunk Game Utility",
+      categoryLabel: "Card Game Utility",
       tags: ["React", "JavaScript", "Game Mechanics", "Dark Theme"],
       image: gameTrackerImg,
       github: "https://github.com/VinceAng02/Chrono-Grimoires-Game-Clock",
@@ -72,9 +72,8 @@ export default function Works() {
           {filterCategories.map((filter) => (
             <button
               key={filter.id}
-              className={`filter-btn ${
-                activeFilter === filter.id ? "active" : ""
-              }`}
+              className={`filter-btn ${activeFilter === filter.id ? "active" : ""
+                }`}
               onClick={() => setActiveFilter(filter.id)}
             >
               {filter.label}
