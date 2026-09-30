@@ -5,6 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Works from './components/Works';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -19,6 +20,7 @@ export default function App() {
         <Works />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
