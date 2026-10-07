@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Works from './components/Works';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ChatBot from './components/ChatBot';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -21,6 +22,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <ChatBot />
     </div>
   );
 }
