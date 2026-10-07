@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import profilePic from "../assets/image.png";
+import githubIcon from "../assets/githubIcon.png";
 
 export default function Home({ setActiveSection }) {
   const scrollToContact = () => {
@@ -30,7 +31,12 @@ export default function Home({ setActiveSection }) {
               rel="noopener noreferrer"
               aria-label="GitHub"
             >
-              git
+              <img
+                src={githubIcon}
+                alt="GitHub"
+                className="github-icon"
+                style={{ width: "24px", height: "24px" }} // Adjusted size here
+              />
             </a>
           </div>
         </div>
