@@ -37,7 +37,7 @@ export default function ChatBot() {
       {/* Teaser Bubble (Greeting hint) */}
       {!isOpen && showTeaser && (
         <div className="chatbot-teaser" onClick={toggleChat} role="button" tabIndex={0}>
-          <span className="teaser-text">Ask my AI anything! 👋</span>
+          <span className="teaser-text">You can ask my personal bot here</span>
           <button
             type="button"
             className="teaser-close"
